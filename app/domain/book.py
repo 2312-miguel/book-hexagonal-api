@@ -5,4 +5,7 @@ class Book(BaseModel):
     id: Optional[int] = None
     title: str
     author: str
-    isbn: str 
+    isbn: str
+
+    class Config:
+        orm_mode = True 
