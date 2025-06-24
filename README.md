@@ -11,7 +11,6 @@
 - ✅ PostgreSQL + SQLAlchemy for persistence
 - ✅ FastAPI for building a modern REST API
 - ✅ Pydantic for request/response validation
-- ✅ Alembic for database migrations
 - ✅ Clear separation between domain, application, and infrastructure layers
 - ✅ Dockerized for easy development and deployment
 
@@ -27,7 +26,6 @@ book_hex_api/
 │   ├── infrastructure/   # DB adapters & API routes
 │   └── main.py           # FastAPI entry point
 ├── tests/                # Unit & integration tests
-├── alembic/              # Database migrations
 ├── docker-compose.yml    # Docker orchestration
 ├── Dockerfile            # FastAPI container
 ├── requirements.txt
@@ -53,7 +51,6 @@ This project aims to:
 - **SQLAlchemy** – ORM for Python
 - **PostgreSQL** – Relational database
 - **Pydantic** – Data validation and parsing
-- **Alembic** – Database migrations
 - **Docker** – Containerized development and deployment
 
 ---

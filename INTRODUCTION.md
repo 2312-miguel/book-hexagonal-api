@@ -23,7 +23,6 @@ The purpose of this project was to build a Book Management API applying the **He
 - **SQLAlchemy** as the ORM for data persistence.
 - **PostgreSQL** as the relational database.
 - **Pydantic** for data validation.
-- **Alembic** for database migrations.
 - **Docker** for containerization and easy deployment.
 
 ### 4. API Implementation
@@ -34,7 +33,7 @@ The purpose of this project was to build a Book Management API applying the **He
 ### 5. Persistence and Database
 - Database models were defined using SQLAlchemy.
 - The book repository was implemented as a persistence adapter.
-- Connection to PostgreSQL and migrations with Alembic were configured.
+- Connection to PostgreSQL was configured.
 
 ### 6. Testing and Validation
 - The structure for unit and integration tests was prepared.
@@ -62,17 +61,7 @@ POSTGRES_PASSWORD=books_password
 docker-compose up --build
 ```
 
-### 3. Alembic database migrations with Docker
-- To generate a new migration:
-```bash
-docker-compose run --rm api alembic revision --autogenerate -m "Migration message"
-```
-- To apply migrations:
-```bash
-docker-compose run --rm api alembic upgrade head
-```
-
-### 4. Access the API
+### 3. Access the API
 - API: http://localhost:8000
 - Interactive docs: http://localhost:8000/docs
 
